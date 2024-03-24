@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:gravity="center"
+    android:background="@drawable/asc"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:id="@+id/email"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:hint="Email"
+                android:drawableLeft="@drawable/baseline_alternate_email_24"
+                android:drawablePadding="8dp"/>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:id="@+id/password"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/twotone_beenhere_24"
+                android:drawablePadding="8dp"/>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:id="@+id/repassword"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/twotone_beenhere_24"
+                android:drawablePadding="8dp"/>
+            <Spinner
+                android:id="@+id/city1"
+                android:layout_width="300dp"
+             android:layout_marginLeft="25dp"
+                android:padding="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/lavender_border"
+                android:entries="@array/city_array"
+                android:layout_marginRight="25dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <CheckBox
+                    android:id="@+id/recruiterCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recruiter"
+                    android:textSize="18sp"
+                    android:checked="true"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/candidateCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Candidate"
+                    android:textSize="18sp"
+                    android:checked="false"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:text="Sign Up"
+                android:id="@+id/butsignup"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/butsignin"
+                android:text="Already an user? Login"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/fb"
+                android:layout_width="80dp"
+                android:layout_height="68dp"
+                android:src="@drawable/db"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"/>
+
+            <ImageView
+                android:id="@+id/gm"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/gmail"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="30dp"/>
+
+            <ImageView
+                android:id="@+id/x"
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+                android:src="@drawable/img"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
